@@ -19,7 +19,7 @@ const Agents = () => {
       let query = supabase.from("agents").select("*");
 
       if (serviceFilter !== "all") {
-        query = query.eq("service_type", serviceFilter);
+        query = query.eq("service_type", serviceFilter as "mpesa" | "telebirr" | "both");
       }
 
       if (search) {
