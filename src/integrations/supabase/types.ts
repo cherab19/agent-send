@@ -14,7 +14,137 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      agents: {
+        Row: {
+          address: string | null
+          agent_code: string
+          business_name: string
+          city: string
+          created_at: string
+          description: string | null
+          id: string
+          is_verified: boolean
+          phone: string
+          rating: number | null
+          region: string
+          service_type: Database["public"]["Enums"]["service_type"]
+          status: Database["public"]["Enums"]["agent_status"]
+          total_reviews: number | null
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          address?: string | null
+          agent_code: string
+          business_name: string
+          city: string
+          created_at?: string
+          description?: string | null
+          id?: string
+          is_verified?: boolean
+          phone: string
+          rating?: number | null
+          region: string
+          service_type?: Database["public"]["Enums"]["service_type"]
+          status?: Database["public"]["Enums"]["agent_status"]
+          total_reviews?: number | null
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          address?: string | null
+          agent_code?: string
+          business_name?: string
+          city?: string
+          created_at?: string
+          description?: string | null
+          id?: string
+          is_verified?: boolean
+          phone?: string
+          rating?: number | null
+          region?: string
+          service_type?: Database["public"]["Enums"]["service_type"]
+          status?: Database["public"]["Enums"]["agent_status"]
+          total_reviews?: number | null
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
+      profiles: {
+        Row: {
+          avatar_url: string | null
+          created_at: string
+          full_name: string | null
+          id: string
+          is_agent: boolean
+          phone: string | null
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          avatar_url?: string | null
+          created_at?: string
+          full_name?: string | null
+          id?: string
+          is_agent?: boolean
+          phone?: string | null
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          avatar_url?: string | null
+          created_at?: string
+          full_name?: string | null
+          id?: string
+          is_agent?: boolean
+          phone?: string | null
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
+      transactions: {
+        Row: {
+          agent_id: string
+          amount: number
+          created_at: string
+          customer_id: string
+          id: string
+          reference_code: string
+          service_type: Database["public"]["Enums"]["service_type"]
+          status: string
+        }
+        Insert: {
+          agent_id: string
+          amount: number
+          created_at?: string
+          customer_id: string
+          id?: string
+          reference_code: string
+          service_type: Database["public"]["Enums"]["service_type"]
+          status?: string
+        }
+        Update: {
+          agent_id?: string
+          amount?: number
+          created_at?: string
+          customer_id?: string
+          id?: string
+          reference_code?: string
+          service_type?: Database["public"]["Enums"]["service_type"]
+          status?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "transactions_agent_id_fkey"
+            columns: ["agent_id"]
+            isOneToOne: false
+            referencedRelation: "agents"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
     }
     Views: {
       [_ in never]: never
@@ -23,7 +153,8 @@ export type Database = {
       [_ in never]: never
     }
     Enums: {
-      [_ in never]: never
+      agent_status: "pending" | "approved" | "suspended"
+      service_type: "mpesa" | "telebirr" | "both"
     }
     CompositeTypes: {
       [_ in never]: never
@@ -150,6 +281,9 @@ export type CompositeTypes<
 
 export const Constants = {
   public: {
-    Enums: {},
+    Enums: {
+      agent_status: ["pending", "approved", "suspended"],
+      service_type: ["mpesa", "telebirr", "both"],
+    },
   },
 } as const
