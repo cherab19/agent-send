@@ -8,6 +8,7 @@ import Agents from "./pages/Agents";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Dashboard from "./pages/Dashboard";
+import AgentDetail from "./pages/AgentDetail";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
