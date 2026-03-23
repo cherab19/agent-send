@@ -31,7 +31,7 @@ const Hero = () => {
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-xl mx-auto mb-10 animate-fade-up" style={{ animationDelay: "0.2s" }}>
-            No need to visit the shop. Find trusted M-Pesa and Telebirr agents near you and transfer money instantly — secure, fast, reliable.
+            No need to visit the shop. Find trusted Telebirr agents near you across Ethiopia and transfer money instantly — secure, fast, reliable.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up" style={{ animationDelay: "0.3s" }}>
