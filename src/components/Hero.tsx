@@ -25,7 +25,7 @@ const Hero = () => {
 
           <h1 className="font-display font-black text-4xl sm:text-5xl md:text-6xl lg:text-7xl tracking-tight text-foreground leading-[1.1] mb-6 animate-fade-up" style={{ animationDelay: "0.1s" }}>
             Send Money to
-            <span className="block bg-clip-text text-transparent gradient-hero">
+            <span className="block text-foreground">
               Your Agent, Anywhere
             </span>
           </h1>
