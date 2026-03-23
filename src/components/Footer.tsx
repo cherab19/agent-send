@@ -13,7 +13,7 @@ const Footer = () => (
             <span className="font-display font-bold text-lg">AgentPay</span>
           </div>
           <p className="text-sm opacity-60 leading-relaxed">
-            Bridging the gap between mobile money agents and customers across East Africa.
+            Bridging the gap between Telebirr agents and customers across Ethiopia.
           </p>
         </div>
         <div>
