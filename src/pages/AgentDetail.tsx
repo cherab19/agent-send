@@ -30,7 +30,7 @@ const AgentDetail = () => {
       const { data } = await supabase.from("agents").select("*").eq("id", id).single();
       setAgent(data);
       if (data) {
-        setServiceType(data.service_type === "both" ? "mpesa" : data.service_type);
+        setServiceType("telebirr");
       }
       setLoading(false);
     };
