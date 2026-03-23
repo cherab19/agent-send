@@ -29,7 +29,7 @@ const Dashboard = () => {
 
   // Agent form state
   const [businessName, setBusinessName] = useState("");
-  const [serviceType, setServiceType] = useState<string>("both");
+  const [serviceType, setServiceType] = useState<string>("telebirr");
   const [agentCode, setAgentCode] = useState("");
   const [phone, setPhone] = useState("");
   const [city, setCity] = useState("");
