@@ -1,12 +1,17 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Shield, Smartphone, MapPin } from "lucide-react";
+import heroPattern from "@/assets/hero-pattern.png";
 
 const Hero = () => {
   return (
     <section className="relative min-h-[90vh] flex items-center overflow-hidden">
       {/* Background pattern */}
-      <div className="absolute inset-0 gradient-hero opacity-[0.04]" />
+      <div
+        className="absolute inset-0 opacity-[0.07]"
+        style={{ backgroundImage: `url(${heroPattern})`, backgroundSize: "cover", backgroundPosition: "center" }}
+      />
+      <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/80 to-background" />
       <div className="absolute top-20 right-0 w-96 h-96 bg-mpesa/10 rounded-full blur-[100px]" />
       <div className="absolute bottom-20 left-0 w-80 h-80 bg-telebirr/10 rounded-full blur-[100px]" />
 
