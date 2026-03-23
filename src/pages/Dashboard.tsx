@@ -29,7 +29,7 @@ const Dashboard = () => {
 
   // Agent form state
   const [businessName, setBusinessName] = useState("");
-  const [serviceType, setServiceType] = useState<string>("both");
+  const [serviceType, setServiceType] = useState<string>("telebirr");
   const [agentCode, setAgentCode] = useState("");
   const [phone, setPhone] = useState("");
   const [city, setCity] = useState("");
@@ -157,9 +157,7 @@ const Dashboard = () => {
                     <Select value={serviceType} onValueChange={setServiceType}>
                       <SelectTrigger><SelectValue /></SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="mpesa">M-Pesa</SelectItem>
                         <SelectItem value="telebirr">Telebirr</SelectItem>
-                        <SelectItem value="both">Both</SelectItem>
                       </SelectContent>
                     </Select>
                   </div>
@@ -181,7 +179,7 @@ const Dashboard = () => {
             <Card className="p-8 shadow-card text-center mb-6">
               <Store className="w-12 h-12 text-muted-foreground mx-auto mb-4" />
               <h2 className="font-display font-semibold text-lg text-foreground mb-2">Become an Agent</h2>
-              <p className="text-sm text-muted-foreground mb-6">Register your M-Pesa or Telebirr agent business to start receiving customer transfers.</p>
+              <p className="text-sm text-muted-foreground mb-6">Register your Telebirr agent business to start receiving customer transfers.</p>
               <Button onClick={() => setShowAgentForm(true)}>Register as Agent</Button>
             </Card>
           )}

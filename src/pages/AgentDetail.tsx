@@ -30,7 +30,7 @@ const AgentDetail = () => {
       const { data } = await supabase.from("agents").select("*").eq("id", id).single();
       setAgent(data);
       if (data) {
-        setServiceType(data.service_type === "both" ? "mpesa" : data.service_type);
+        setServiceType("telebirr");
       }
       setLoading(false);
     };
@@ -184,18 +184,6 @@ const AgentDetail = () => {
                 placeholder="Enter amount"
               />
             </div>
-            {agent.service_type === "both" && (
-              <div>
-                <Label>Service</Label>
-                <Select value={serviceType} onValueChange={setServiceType}>
-                  <SelectTrigger><SelectValue /></SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="mpesa">M-Pesa</SelectItem>
-                    <SelectItem value="telebirr">Telebirr</SelectItem>
-                  </SelectContent>
-                </Select>
-              </div>
-            )}
             <Button type="submit" className="w-full gap-2" disabled={submitting}>
               {submitting && <Loader2 className="w-4 h-4 animate-spin" />}
               Confirm Transfer

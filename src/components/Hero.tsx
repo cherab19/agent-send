@@ -19,19 +19,19 @@ const Hero = () => {
         <div className="max-w-3xl mx-auto text-center">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-accent text-accent-foreground text-sm font-medium mb-8 animate-fade-up">
-            <div className="w-2 h-2 rounded-full bg-mpesa animate-pulse" />
-            M-Pesa & Telebirr — One Platform
+            <div className="w-2 h-2 rounded-full bg-telebirr animate-pulse" />
+            Telebirr — Ethiopia's Digital Payment Platform
           </div>
 
           <h1 className="font-display font-black text-4xl sm:text-5xl md:text-6xl lg:text-7xl tracking-tight text-foreground leading-[1.1] mb-6 animate-fade-up" style={{ animationDelay: "0.1s" }}>
             Send Money to
-            <span className="block bg-clip-text text-transparent gradient-hero">
+            <span className="block text-foreground">
               Your Agent, Anywhere
             </span>
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-xl mx-auto mb-10 animate-fade-up" style={{ animationDelay: "0.2s" }}>
-            No need to visit the shop. Find trusted M-Pesa and Telebirr agents near you and transfer money instantly — secure, fast, reliable.
+            No need to visit the shop. Find trusted Telebirr agents near you across Ethiopia and transfer money instantly — secure, fast, reliable.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up" style={{ animationDelay: "0.3s" }}>
@@ -55,7 +55,7 @@ const Hero = () => {
               { icon: MapPin, label: "Cities Covered", value: "50+" },
             ].map((stat) => (
               <div key={stat.label} className="text-center">
-                <stat.icon className="w-5 h-5 mx-auto mb-2 text-mpesa" />
+                <stat.icon className="w-5 h-5 mx-auto mb-2 text-telebirr" />
                 <p className="font-display font-bold text-xl text-foreground">{stat.value}</p>
                 <p className="text-xs text-muted-foreground">{stat.label}</p>
               </div>

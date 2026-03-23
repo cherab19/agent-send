@@ -4,8 +4,8 @@ const steps = [
   {
     icon: Search,
     title: "Find an Agent",
-    description: "Search for M-Pesa or Telebirr agents by location, service type, or agent code.",
-    color: "bg-mpesa-light text-mpesa",
+    description: "Search for Telebirr agents by location or agent code.",
+    color: "bg-telebirr-light text-telebirr",
   },
   {
     icon: UserCheck,
@@ -17,7 +17,7 @@ const steps = [
     icon: SendHorizontal,
     title: "Send Money",
     description: "Transfer money directly to your chosen agent — no physical visit required.",
-    color: "bg-mpesa-light text-mpesa",
+    color: "bg-telebirr-light text-telebirr",
   },
   {
     icon: CheckCircle2,

@@ -11,7 +11,7 @@ const features = [
     icon: Shield,
     title: "Verified & Trusted",
     description: "Every agent is verified before listing. Your money is always safe.",
-    color: "bg-mpesa-light text-mpesa",
+    color: "bg-telebirr-light text-telebirr",
   },
   {
     icon: Clock,
@@ -22,8 +22,8 @@ const features = [
   {
     icon: Globe,
     title: "Nationwide Coverage",
-    description: "Find agents across Ethiopia and Kenya — urban and rural areas.",
-    color: "bg-mpesa-light text-mpesa",
+    description: "Find agents across Ethiopia — urban and rural areas.",
+    color: "bg-telebirr-light text-telebirr",
   },
 ];
 
