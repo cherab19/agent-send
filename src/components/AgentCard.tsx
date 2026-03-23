@@ -1,6 +1,7 @@
 import { Star, MapPin, BadgeCheck } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import ServiceBadge from "./ServiceBadge";
+import { Link } from "react-router-dom";
 
 interface AgentCardProps {
   agent: {
