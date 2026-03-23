@@ -43,7 +43,7 @@ const Agents = () => {
             <h1 className="font-display font-bold text-3xl md:text-4xl text-foreground mb-3">
               Find Trusted Agents
             </h1>
-            <p className="text-muted-foreground">Search M-Pesa and Telebirr agents near you</p>
+            <p className="text-muted-foreground">Search Telebirr agents near you across Ethiopia</p>
           </div>
 
           {/* Filters */}
