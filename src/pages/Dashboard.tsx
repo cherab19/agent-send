@@ -157,9 +157,7 @@ const Dashboard = () => {
                     <Select value={serviceType} onValueChange={setServiceType}>
                       <SelectTrigger><SelectValue /></SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="mpesa">M-Pesa</SelectItem>
                         <SelectItem value="telebirr">Telebirr</SelectItem>
-                        <SelectItem value="both">Both</SelectItem>
                       </SelectContent>
                     </Select>
                   </div>
