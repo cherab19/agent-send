@@ -52,7 +52,7 @@ const AgentCard = ({ agent }: AgentCardProps) => {
 
       <div className="flex items-center justify-between">
         <span className="text-xs text-muted-foreground">{agent.phone}</span>
-        <button className="text-xs font-medium text-mpesa hover:underline">View Details →</button>
+        <Link to={`/agents/${agent.id}`} className="text-xs font-medium text-mpesa hover:underline">View Details →</Link>
       </div>
     </Card>
   );
