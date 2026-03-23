@@ -53,7 +53,7 @@ const Register = () => {
             <span className="font-display font-bold text-xl text-foreground">AgentPay</span>
           </Link>
           <h1 className="font-display font-bold text-2xl text-foreground">Create your account</h1>
-          <p className="text-sm text-muted-foreground mt-1">Join AgentPay as a customer or agent</p>
+          <p className="text-sm text-muted-foreground mt-1">Join AgentPay as a customer or agent in Ethiopia</p>
         </div>
 
         <form onSubmit={handleRegister} className="space-y-4">

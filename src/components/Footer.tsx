@@ -23,10 +23,12 @@ const Footer = () => (
             <Link to="/register" className="block hover:opacity-100 transition-opacity">Become an Agent</Link>
           </div>
         </div>
-        <div>
+          <div>
           <h4 className="font-display font-semibold mb-3">Services</h4>
           <div className="space-y-2 text-sm opacity-60">
-            <p>M-Pesa Transfers</p>
+            <p>Telebirr Transfers</p>
+            <p>Agent Verification</p>
+          </div>
             <p>Telebirr Transfers</p>
             <p>Agent Verification</p>
           </div>

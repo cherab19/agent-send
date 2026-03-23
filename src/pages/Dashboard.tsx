@@ -179,7 +179,7 @@ const Dashboard = () => {
             <Card className="p-8 shadow-card text-center mb-6">
               <Store className="w-12 h-12 text-muted-foreground mx-auto mb-4" />
               <h2 className="font-display font-semibold text-lg text-foreground mb-2">Become an Agent</h2>
-              <p className="text-sm text-muted-foreground mb-6">Register your M-Pesa or Telebirr agent business to start receiving customer transfers.</p>
+              <p className="text-sm text-muted-foreground mb-6">Register your Telebirr agent business to start receiving customer transfers.</p>
               <Button onClick={() => setShowAgentForm(true)}>Register as Agent</Button>
             </Card>
           )}

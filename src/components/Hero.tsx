@@ -55,7 +55,7 @@ const Hero = () => {
               { icon: MapPin, label: "Cities Covered", value: "50+" },
             ].map((stat) => (
               <div key={stat.label} className="text-center">
-                <stat.icon className="w-5 h-5 mx-auto mb-2 text-mpesa" />
+                <stat.icon className="w-5 h-5 mx-auto mb-2 text-telebirr" />
                 <p className="font-display font-bold text-xl text-foreground">{stat.value}</p>
                 <p className="text-xs text-muted-foreground">{stat.label}</p>
               </div>

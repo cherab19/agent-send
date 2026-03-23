@@ -17,7 +17,7 @@ const steps = [
     icon: SendHorizontal,
     title: "Send Money",
     description: "Transfer money directly to your chosen agent — no physical visit required.",
-    color: "bg-mpesa-light text-mpesa",
+    color: "bg-telebirr-light text-telebirr",
   },
   {
     icon: CheckCircle2,

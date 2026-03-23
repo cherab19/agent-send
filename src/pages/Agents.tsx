@@ -63,9 +63,7 @@ const Agents = () => {
               </SelectTrigger>
               <SelectContent>
                 <SelectItem value="all">All Services</SelectItem>
-                <SelectItem value="mpesa">M-Pesa</SelectItem>
                 <SelectItem value="telebirr">Telebirr</SelectItem>
-                <SelectItem value="both">Both</SelectItem>
               </SelectContent>
             </Select>
           </div>
