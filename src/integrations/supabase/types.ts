@@ -104,6 +104,51 @@ export type Database = {
         }
         Relationships: []
       }
+      reviews: {
+        Row: {
+          agent_id: string
+          comment: string | null
+          created_at: string
+          customer_id: string
+          id: string
+          rating: number
+          transaction_id: string
+        }
+        Insert: {
+          agent_id: string
+          comment?: string | null
+          created_at?: string
+          customer_id: string
+          id?: string
+          rating: number
+          transaction_id: string
+        }
+        Update: {
+          agent_id?: string
+          comment?: string | null
+          created_at?: string
+          customer_id?: string
+          id?: string
+          rating?: number
+          transaction_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "reviews_agent_id_fkey"
+            columns: ["agent_id"]
+            isOneToOne: false
+            referencedRelation: "agents"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "reviews_transaction_id_fkey"
+            columns: ["transaction_id"]
+            isOneToOne: true
+            referencedRelation: "transactions"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       transactions: {
         Row: {
           agent_id: string
