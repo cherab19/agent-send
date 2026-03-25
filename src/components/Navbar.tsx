@@ -42,6 +42,7 @@ const Navbar = () => {
           {user ? (
             <>
               <Link to="/dashboard" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">Dashboard</Link>
+              <AgentNotifications />
               <Button variant="ghost" size="sm" onClick={handleLogout}>Logout</Button>
             </>
           ) : (
