@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Zap } from "lucide-react";
+import AgentNotifications from "@/components/AgentNotifications";
 import { supabase } from "@/integrations/supabase/client";
 
 const Navbar = () => {
